@@ -39,14 +39,15 @@ public class NeoRxCoffeeApplication {
 }
 
 @Component
+@AllArgsConstructor
 class DataLoader {
     private final CoffeeDrinkRepo cdRepo;
     private final CoffeeShopRepo csRepo;
 
-    public DataLoader(CoffeeDrinkRepo cdRepo, CoffeeShopRepo csRepo) {
-        this.cdRepo = cdRepo;
-        this.csRepo = csRepo;
-    }
+//    public DataLoader(CoffeeDrinkRepo cdRepo, CoffeeShopRepo csRepo) {
+//        this.cdRepo = cdRepo;
+//        this.csRepo = csRepo;
+//    }
 
     @PostConstruct
     private void load() {
